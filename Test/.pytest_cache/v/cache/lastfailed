@@ -1,5 +1,7 @@
 {
   "pets_test.py::test_delete_pet": true,
   "store_test.py::test_delete_pet": true,
-  "store_test.py::test_delete_store": true
+  "store_test.py::test_delete_store": true,
+  "user_test.py::test_create_user": true,
+  "user_test.py::test_get_user_login": true
 }

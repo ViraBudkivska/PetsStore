@@ -13,12 +13,12 @@ class User:
   "password": "123456",
   "phone": "0967667575",
   "userStatus": 0
-}
+         }
 
     def create_user(self):
         response = requests.post(self.url + '/user', json=self.payload)
-        data = json.loads(response.text)
-        return data, response
+        # data = json.loads(response.text)
+        return response
 
 
     def get_user_username(self):
@@ -27,22 +27,22 @@ class User:
         return data, response
 
     def get_user_login(self):
-        response = requests.get(self.url + '/pet/findByStatus?status=available', json=self.payload)
-        data = json.loads(response.text)
-        return data, response
+        response = requests.get(self.url + 'user/login?username=Nini&password=123456', json=self.payload)
+        # data = json.loads(response.text)
+        return response
 
 
     def update_user_username(self):
-        self.payload['name'] = "Dog"
-        self.payload['id'] = "123"
-        self.payload['status'] = "pending"
-        response = requests.put(self.url + '/pet', json=self.payload)
+        self.payload['id'] = "666"
+        self.payload['phone'] = "12565254325163"
+        self.payload['lastName'] = "Jira"
+        response = requests.put(self.url + '/user/' + str(self.payload['username']), json=self.payload)
         data = json.loads(response.text)
         return data, response
 
 
     def delete_user_username(self):
-        response = requests.delete(self.url + '/pet/' + str(self.payload['id']), json=self.payload)
+        response = requests.delete(self.url + '/user/' + str(self.payload['username']), json=self.payload)
         data = json.loads(response.text)
         return data, response
 
