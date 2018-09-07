@@ -1,0 +1,4 @@
+[
+  "test_pets.py::test_create_pet",
+  "test_pets.py::test_get_pet_by_id"
+]
