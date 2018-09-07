@@ -32,9 +32,8 @@ class Store:
         return data, response
 
 
-    def delete_pet_by_id(self):
+    def delete_store_by_id(self):
         response = requests.delete(self.url + '/store/order/' + str(self.payload['id']), json=self.payload)
-        data = json.loads(response.text)
-        return data, response
+        return response
 
 

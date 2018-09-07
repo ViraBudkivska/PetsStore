@@ -1,1 +1,5 @@
-{}
+{
+  "pets_test.py::test_delete_pet": true,
+  "store_test.py::test_delete_pet": true,
+  "store_test.py::test_delete_store": true
+}
