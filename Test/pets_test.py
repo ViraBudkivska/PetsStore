@@ -8,7 +8,6 @@ def test_create_pet():
     assert response_from_function[1].status_code == 200
     assert response_from_function[0]['id'] == pet_manager.payload['id']
 
-
 def test_get_pet_by_id():
     response_from_function = pet_manager.get_pet_by_id()
     assert response_from_function[1].status_code == 200

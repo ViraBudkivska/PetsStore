@@ -22,7 +22,7 @@ class User:
 
 
     def get_user_username(self):
-        response = requests.get(self.url + '/pet/' + str(self.payload['id']), json=self.payload)
+        response = requests.get(self.url + '/user/' + str(self.payload['username']), json=self.payload)
         data = json.loads(response.text)
         return data, response
 
