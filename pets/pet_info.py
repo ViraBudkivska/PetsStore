@@ -26,8 +26,9 @@ class Pets:
 
 
     def get_pet_by_id(self):
-        response = requests.get(self.url + '/pet/' + str(self.payload['id'][id]), json=self)
-        return response
+        response = requests.get(self.url + '/pet/' + str(self.payload['id']), json=self.payload)
+        data = json.loads(response.text)
+        return data, response
 
     def get_find_by_status_pet(self):
         response = requests.get(self.url + '/pet/findByStatus?status=available', json=self.payload)
@@ -39,13 +40,13 @@ class Pets:
         self.payload['name'] = "Dog"
         self.payload['id'] = "123"
         self.payload['status'] = "pending"
-        response = requests.put(self.url + '/pet', json=self)
+        response = requests.put(self.url + '/pet', json=self.payload)
         data = json.loads(response.text)
         return data, response
 
 
     def delete_pet_by_id(self):
-        response = requests.delete(self.url + '/pet/' + str(self.payload['id']), json=self)
+        response = requests.delete(self.url + '/pet/' + str(self.payload['id']), json=self.payload)
         data = json.loads(response.text)
         return data, response
 
