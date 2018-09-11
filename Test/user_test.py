@@ -1,4 +1,4 @@
-from user_requests.user import  user_object
+from user_requests.user import user_object
 
 #user_manager = User()
 
