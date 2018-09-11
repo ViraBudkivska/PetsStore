@@ -1,4 +1,6 @@
 {
+  "pets_test.py::test_create_pet": true,
+  "pets_test.py::test_get_pet_by_id": true,
   "store_test.py::test_delete_pet": true,
   "user_test.py::test_delete_pet": true,
   "user_test.py::test_get_user_login": true,
