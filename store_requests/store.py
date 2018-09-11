@@ -15,6 +15,10 @@ class Store:
 
 
     def create_store(self):
+        """
+
+        :return: data response
+        """
         response = requests.post(self.url + '/store/order', json=self.payload)
         data = json.loads(response.text)
         return data, response
@@ -31,9 +35,15 @@ class Store:
         data = json.loads(response.text)
         return data, response
 
+    def get_invalid_store_by_id(self):
+        self.payload['id'] = 123
+        response = requests.get(self.url + '/store/order/' + str(self.payload['id']), json=self.payload)
+        data = json.loads(response.text)
+        return data, response
+
 
     def delete_store_by_id(self):
-        response = requests.delete(self.url + '/store/order/' + str(self.payload['id']), json=self.payload)
+        response = requests.delete(self.url + '/store/order/' + str(self.payload['id']))
         return response
 
 
