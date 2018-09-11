@@ -1,24 +1,22 @@
-import pytest
-from user_requests.user import User
+from user_requests.user import  user_object
 
-user_manager = User()
+#user_manager = User()
 
-@pytest.mark.order1
 def test_create_user():
-    response_from_function = user_manager.create_user()
+    response_from_function = user_object.create_user()
     assert response_from_function.status_code == 200
 
-@pytest.mark.order2
+
 def test_get_user_username():
-    response_from_function = user_manager.get_user_username()
+    response_from_function = user_object.get_user_username()
     assert response_from_function.status_code == 200
 
-@pytest.mark.order3
+
 def test_update_user_username():
-    response_from_function = user_manager.update_user_username()
+    response_from_function = user_object.update_user_username()
     assert response_from_function.status_code == 200
 
-@pytest.mark.order4
+
 def test_delete_user_username():
-    response_from_function = user_manager.delete_user_username()
+    response_from_function = user_object.delete_user_username()
     assert response_from_function.status_code == 200
