@@ -1,39 +1,39 @@
 import pytest
-from store_requests.store import Store
+from store_requests.store import Store_Object
 
-store_manager = Store()
+# store_manager = Store()
 
-@pytest.mark.order1
+
 def test_create_store():
-    response_from_function = store_manager.create_store()
+    response_from_function = Store_Object.create_store()
     assert response_from_function[1].status_code == 200
-    assert response_from_function[0]['id'] == store_manager.payload['id']
+    assert response_from_function[0]['id'] == Store_Object.payload['id']
+    assert response_from_function[0]['petId'] == Store_Object.payload['petId']
+    assert response_from_function[0]['quantity'] == Store_Object.payload['quantity']
+    assert response_from_function[0]['status'] == Store_Object.payload['status']
+    assert response_from_function[0]['complete'] == Store_Object.payload['complete']
 
-@pytest.mark.order2
+
 def test_get_store_by_id():
-    response_from_function = store_manager.get_store_by_id()
+    response_from_function = Store_Object.get_store_by_id()
     assert response_from_function[1].status_code == 200
-    assert response_from_function[0]['id'] == store_manager.payload['id']
+    assert response_from_function[0]['id'] == Store_Object.payload['id']
 
-@pytest.mark.order3
+
 def test_get_invalid_store_by_id():
-    response_from_function = store_manager.get_invalid_store_by_id()
-    assert response_from_function[1].status_code == 404
-    # assert response_from_function[0]['id'] == store_manager.payload['id']
+    response_from_function = Store_Object.get_invalid_store_by_id()
+    assert response_from_function[1].status_code == 200
+    assert response_from_function[0]['id'] == Store_Object.payload['id']
 
-@pytest.mark.order4
+
 def test_get_find_inventory_store():
-    response_from_function = store_manager.get_store_inventory()
+    response_from_function = Store_Object.get_store_inventory()
     assert response_from_function[1].status_code == 200
 
-@pytest.mark.order5
-def test_delete_store():
-    """
-    If store deleted - code responses = 404 ("Order not found")
 
-    """
-    response_from_function = store_manager.delete_store_by_id()
-    assert response_from_function.status_code == 404
+def test_delete_store():
+    response_from_function = Store_Object.delete_store_by_id()
+    assert response_from_function.status_code == 200
 
 
 

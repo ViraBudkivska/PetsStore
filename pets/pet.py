@@ -1,21 +1,29 @@
 import json
 import requests
+import sys
 
 
 class Pets:
+
     # url = 'https://petstore.swagger.io/v2'
-    # payload = {'id': 1, 'category': {
-    #     "id": 1,
-    #     "name": ""
-    # }, 'name': "PPUy", 'photoUrls': [
-    #     "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/" +
-    #     "Biandintz_eta_zaldiak_-_modified2.jpg/1280px-Biandintz_eta_zaldiak_-_modified2.jpg"
-    # ], 'tags': [
+    # payload = {
+    #  "id": 1,
+    #  "category": {
+    #     "id": 2,
+    #     "name": "Nimfa"
+    #  },
+    #  "name": "doggie",
+    #  "photoUrls": [
+    #     "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Biandintz_eta_zaldiak_-_modified2.jpg/1280px-Biandintz_eta_zaldiak_-_modified2.jpg"
+    #     ],
+    #  "tags": [
     #     {
-    #         "id": 6,
-    #         "name": "BUBU"
+    #         "id": 1,
+    #         "name": "Hihi"
     #     }
-    # ], 'status': "available"}
+    #     ],
+    #  "status": "available"
+    # }
 
     payload: dict = {}
 
@@ -58,14 +66,16 @@ class Pets:
         return data, response
 
 
-pet_object = Pets(id=1, category=dict(id=12, name="Dog"), name="ZIZI", photoUrls= "https://upload.wikimedia.org/wikipedia/commons/thumb/a/"
-+"a2/Biandintz_eta_zaldiak_-_modified2.jpg/1280px-Biandintz_eta_zaldiak_-_modified2.jpg", tags=dict(id=45, name="HIHI"),
+category_dict = dict(id=12, name="Jojo")
+tag_dict = dict(id=45, name="HIHI")
+
+Pet_Object = Pets(id=1, category=category_dict, name="ZIZI", photoUrls= "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Biandintz_eta_zaldiak_-_modified2.jpg/1280px-Biandintz_eta_zaldiak_-_modified2.jpg", tags=tag_dict,
                   status="available")
 
-pet_object.create_pet()
-pet_object.get_pet_by_id()
-pet_object.get_find_by_status_pet()
-pet_object.update_pet()
-pet_object.delete_pet_by_id()
-pet_object.get_invalid_pet_by_id()
+Pet_Object.create_pet()
+Pet_Object.get_pet_by_id()
+Pet_Object.get_find_by_status_pet()
+Pet_Object.update_pet()
+Pet_Object.delete_pet_by_id()
+Pet_Object.get_invalid_pet_by_id()
 

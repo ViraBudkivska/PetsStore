@@ -1,5 +1,6 @@
 import requests
-
+import sys
+import json
 
 # class User:
 #
@@ -25,7 +26,13 @@ class User:
 
     def create_user(self):
         response = requests.post(self.url + '/user', json=self.payload)
-        return response
+        try:
+            if response.status_code == 200:
+                return response
+        except Exception:
+            print("oops we have a problem!")
+            print(sys.exc_info())
+            exit()
 
     def get_user_username(self):
         response = requests.get(self.url + '/user/' + str(self.payload['username']), json=self.payload)
@@ -38,12 +45,18 @@ class User:
 
     def delete_user_username(self):
         response = requests.delete(self.url + '/user/' + str(self.payload['username']))
-        return response
+        try:
+            if response.status_code == 200:
+                return response
+        except Exception:
+            print("oops we have a problem!")
+            print(sys.exc_info())
+            exit()
 
 
-user_object = User(id=1, username="Ninih", firstName="Vira", lastName="Budda", email="email@gmail.com", password="1234567", phone="55455545", userStatus=0)
+User_Object = User(id=1, username="Ninih", firstName="Vira", lastName="Budda", email="email@gmail.com", password="1234567", phone="55455545", userStatus=0)
 
-user_object.create_user()
-user_object.get_user_username()
-user_object.update_user_username()
-user_object.delete_user_username()
+User_Object.create_user()
+User_Object.get_user_username()
+User_Object.update_user_username()
+User_Object.delete_user_username()
