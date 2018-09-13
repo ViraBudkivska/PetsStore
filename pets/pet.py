@@ -3,33 +3,38 @@ import requests
 import sys
 
 
+
 class Pets:
 
-    # url = 'https://petstore.swagger.io/v2'
-    # payload = {
-    #  "id": 1,
-    #  "category": {
-    #     "id": 2,
-    #     "name": "Nimfa"
-    #  },
-    #  "name": "doggie",
-    #  "photoUrls": [
-    #     "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Biandintz_eta_zaldiak_-_modified2.jpg/1280px-Biandintz_eta_zaldiak_-_modified2.jpg"
-    #     ],
-    #  "tags": [
-    #     {
-    #         "id": 1,
-    #         "name": "Hihi"
-    #     }
-    #     ],
-    #  "status": "available"
-    # }
+    url = 'https://petstore.swagger.io/v2'
+    payload = {
+     "id": 1,
+     "category": {
+        "id": 2,
+        "name": "Nimfa"
+     },
+     "name": "doggie",
+     "photoUrls": [
+        "https://www.what-dog.net/Images/faces2/scroll001.jpg"
+        ],
+     "tags": [
+        {
+            "id": 1,
+            "name": "Hihi"
+        }
+        ],
+     "status": "available"
+    }
 
-    payload: dict = {}
-
-    def __init__(self, **kwargs):
-        self.payload = dict(**kwargs)
-        self.url = 'https://petstore.swagger.io/v2'
+    # payload: dict = {}
+    #
+    # def __init__(self, **kwargs):
+    #     """
+    #
+    #     :param kwargs:
+    #     """
+    #     self.payload = dict(**kwargs)
+    #     self.url = _url
 
     def create_pet(self):
         response = requests.post(self.url + '/pet', json=self.payload)
@@ -66,16 +71,15 @@ class Pets:
         return data, response
 
 
-category_dict = dict(id=12, name="Jojo")
-tag_dict = dict(id=45, name="HIHI")
+# category_dict = dict(id=12, name="Jojo")
+# tag_dict = dict(id=45, name="HIHI")
 
-Pet_Object = Pets(id=1, category=category_dict, name="ZIZI", photoUrls= "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Biandintz_eta_zaldiak_-_modified2.jpg/1280px-Biandintz_eta_zaldiak_-_modified2.jpg", tags=tag_dict,
-                  status="available")
+# Pet_Object = Pets(id=1, category=category_dict, name="ZIZI", photoUrls="https://www.what-dog.net/Images/faces2/scroll001.jpg", tags=tag_dict,status="available")
 
-Pet_Object.create_pet()
-Pet_Object.get_pet_by_id()
-Pet_Object.get_find_by_status_pet()
-Pet_Object.update_pet()
-Pet_Object.delete_pet_by_id()
-Pet_Object.get_invalid_pet_by_id()
+# Pet_Object.create_pet()
+# Pet_Object.get_pet_by_id()
+# Pet_Object.get_find_by_status_pet()
+# Pet_Object.update_pet()
+# Pet_Object.delete_pet_by_id()
+# Pet_Object.get_invalid_pet_by_id()
 

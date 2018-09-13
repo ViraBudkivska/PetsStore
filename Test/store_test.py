@@ -2,6 +2,7 @@ import pytest
 from store_requests.store import Store_Object
 
 # store_manager = Store()
+# url_for_test = 'https://petstore.swagger.io/v2'
 
 
 def test_create_store():
