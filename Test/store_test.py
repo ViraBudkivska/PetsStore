@@ -1,4 +1,4 @@
-import pytest
+from Test.test_data import SUCCESS
 from store_requests.store import Store_Object
 
 # store_manager = Store()
@@ -7,7 +7,7 @@ from store_requests.store import Store_Object
 
 def test_create_store():
     response_from_function = Store_Object.create_store()
-    assert response_from_function[1].status_code == 200
+    assert response_from_function[1].status_code == SUCCESS
     assert response_from_function[0]['id'] == Store_Object.payload['id']
     assert response_from_function[0]['petId'] == Store_Object.payload['petId']
     assert response_from_function[0]['quantity'] == Store_Object.payload['quantity']
@@ -17,24 +17,24 @@ def test_create_store():
 
 def test_get_store_by_id():
     response_from_function = Store_Object.get_store_by_id()
-    assert response_from_function[1].status_code == 200
+    assert response_from_function[1].status_code == SUCCESS
     assert response_from_function[0]['id'] == Store_Object.payload['id']
 
 
 def test_get_invalid_store_by_id():
     response_from_function = Store_Object.get_invalid_store_by_id()
-    assert response_from_function[1].status_code == 200
+    assert response_from_function[1].status_code == SUCCESS
     assert response_from_function[0]['id'] == Store_Object.payload['id']
 
 
 def test_get_find_inventory_store():
     response_from_function = Store_Object.get_store_inventory()
-    assert response_from_function[1].status_code == 200
+    assert response_from_function[1].status_code == SUCCESS
 
 
 def test_delete_store():
     response_from_function = Store_Object.delete_store_by_id()
-    assert response_from_function.status_code == 200
+    assert response_from_function.status_code == SUCCESS
 
 
 
