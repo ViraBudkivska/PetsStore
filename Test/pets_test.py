@@ -2,7 +2,6 @@ from Test.test_data import NotFound, SUCCESS
 from pets.pet import Pets
 
 pet_manager = Pets()
-# _url = "https://petstore.swagger.io/v2"
 
 
 def test_create_pet():

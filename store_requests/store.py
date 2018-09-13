@@ -1,6 +1,7 @@
 import requests
 import json
 # from Test.store_test import url_for_test
+from Test.test_data import url_site
 
 
 class Store:
@@ -8,12 +9,8 @@ class Store:
     payload: dict = {}
 
     def __init__(self, **kwargs):
-        """
-
-        :param kwargs:
-        """
         self.payload = dict(**kwargs)
-        self.url = 'https://petstore.swagger.io/v2'
+        self.url = url_site
 
     def create_store(self):
         """ This function create store

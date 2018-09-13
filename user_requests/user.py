@@ -1,19 +1,7 @@
 import requests
 import sys
-import json
 
-# class User:
-#
-#     payload = {
-#   "id": 1,
-#   "username": "Nini",
-#   "firstName": "Lidiya",
-#   "lastName": "Kozak",
-#   "email": "nini@gfnnf.com",
-#   "password": "123456",
-#   "phone": "0967667575",
-#   "userStatus": 1
-#          }
+from Test.test_data import url_site, new_username, error_message
 
 
 class User:
@@ -22,7 +10,7 @@ class User:
 
     def __init__(self, **kwargs):
         self.payload = dict(**kwargs)
-        self.url = 'https://petstore.swagger.io/v2'
+        self.url = url_site
 
     def create_user(self):
         response = requests.post(self.url + '/user', json=self.payload)
@@ -30,7 +18,7 @@ class User:
             if response.status_code == 200:
                 return response
         except Exception:
-            print("oops we have a problem!")
+            print(error_message)
             print(sys.exc_info())
             exit()
 
@@ -39,7 +27,7 @@ class User:
         return response
 
     def update_user_username(self):
-        self.payload['username'] = "Nono"
+        self.payload['username'] = new_username
         response = requests.put(self.url + '/user/' + str(self.payload['username']), json=self.payload)
         return response
 
@@ -49,7 +37,7 @@ class User:
             if response.status_code == 200:
                 return response
         except Exception:
-            print("oops we have a problem!")
+            print(error_message)
             print(sys.exc_info())
             exit()
 
