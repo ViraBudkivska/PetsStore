@@ -1,44 +1,25 @@
-import requests
-import sys
+from user_requests.usermanager import UserManager, User
 
-from Test.test_data import url_site, new_username, error_message
+# User_Object = UserManager(id=1, username="Ninih", firstName="Vira", lastName="Budda", email="email@gmail.com", password="1234567", phone="55455545", userStatus=0)
 
+# User_Object.create_user()
+# User_Object.get_user_username()
+# User_Object.update_user_username()
+# User_Object.delete_user_username()
 
-class User:
+user_1 = User(id=1, username="Ninih", firstName="Vira", lastName="Budda", email="email@gmail.com", password="1234567", phone="55455545", userStatus=0)
 
-    payload: dict = {}
+# user_1.id = 1
+# user_1.username = "Bob"
+# user_1.firstName = "Vira"
+# user_1.lastName = "Budda"
+# user_1.email = "email@gmail.com"
+# user_1.password = "1234567"
+# user_1.phone = "55455545"
+# user_1.userStatus = "55455545"
 
-    def __init__(self, **kwargs):
-        self.payload = dict(**kwargs)
-        self.url = url_site
-
-    def create_user(self):
-        response = requests.post(self.url + '/user', json=self.payload)
-        try:
-            if response.status_code == 200:
-                return response
-        except Exception:
-            print(error_message)
-            print(sys.exc_info())
-            exit()
-
-    def get_user_username(self):
-        response = requests.get(self.url + '/user/' + str(self.payload['username']), json=self.payload)
-        return response
-
-    def update_user_username(self):
-        self.payload['username'] = new_username
-        response = requests.put(self.url + '/user/' + str(self.payload['username']), json=self.payload)
-        return response
-
-    def delete_user_username(self):
-        response = requests.delete(self.url + '/user/' + str(self.payload['username']))
-        try:
-            if response.status_code == 200:
-                return response
-        except Exception:
-            print(error_message)
-            print(sys.exc_info())
-            exit()
-
-
+manager = UserManager()
+manager.create_user()
+manager.get_user_username()
+manager.update_user_username()
+manager.delete_user_username()

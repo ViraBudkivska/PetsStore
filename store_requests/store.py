@@ -13,7 +13,8 @@ class Store:
         self.url = url_site
 
     def create_store(self):
-        """ This function create store
+        """
+        This function create store
 
         :return:    data, response -- the return code
         """

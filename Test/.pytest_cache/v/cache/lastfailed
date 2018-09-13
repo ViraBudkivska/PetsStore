@@ -1,5 +1,10 @@
 {
+  "pets_test.py": true,
+  "pets_test.py::test_create_pet": true,
+  "pets_test.py::test_get_pet_by_id": true,
+  "pets_test.py::test_update_pet": true,
   "store_test.py::test_delete_pet": true,
+  "user_test.py": true,
   "user_test.py::test_delete_pet": true,
   "user_test.py::test_get_user_login": true,
   "user_test.py::test_update_pet": true

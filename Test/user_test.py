@@ -1,27 +1,27 @@
-from Test.test_data import SUCCESS
-from user_requests.user_manager import User_Object
-
+# from Test.test_data import SUCCESS
+from user_requests.user import manager
 
 # user_manager = User()
 
+
 def test_create_user():
-    response_from_function = User_Object.create_user()
-    assert response_from_function.status_code == SUCCESS
+    response_from_function = manager.create_user()
+    assert response_from_function.status_code == 200
 
 
 def test_get_user_username():
-    response_from_function = User_Object.get_user_username()
-    assert response_from_function.status_code == SUCCESS
+    response_from_function = manager.get_user_username()
+    assert response_from_function.status_code == 200
 
 
 def test_update_user_username():
-    response_from_function = User_Object.update_user_username()
-    assert response_from_function.status_code == SUCCESS
+    response_from_function = manager.update_user_username()
+    assert response_from_function.status_code == 200
 
 
 def test_delete_user_username():
-    response_from_function = User_Object.delete_user_username()
-    assert response_from_function.status_code == SUCCESS
+    response_from_function = manager.delete_user_username()
+    assert response_from_function.status_code == 200
 
 
 

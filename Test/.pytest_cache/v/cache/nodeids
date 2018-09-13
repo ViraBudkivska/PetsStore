@@ -1,8 +1,7 @@
 [
-  "pets_test.py::test_create_pet",
-  "pets_test.py::test_get_pet_by_id",
-  "pets_test.py::test_get_find_by_status_pet",
-  "pets_test.py::test_update_pet",
-  "pets_test.py::test_delete_pet",
-  "pets_test.py::test_invalid_pet_by_id"
+  "store_test.py::test_create_store",
+  "store_test.py::test_get_store_by_id",
+  "store_test.py::test_get_invalid_store_by_id",
+  "store_test.py::test_get_find_inventory_store",
+  "store_test.py::test_delete_store"
 ]

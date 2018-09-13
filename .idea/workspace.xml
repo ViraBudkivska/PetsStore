@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02b4cf13-4aaa-478f-b03c-22f54287c4dd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/user_requests/usermanager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/.pytest_cache/v/cache/lastfailed" beforeDir="false" afterPath="$PROJECT_DIR$/Test/.pytest_cache/v/cache/lastfailed" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/.pytest_cache/v/cache/nodeids" beforeDir="false" afterPath="$PROJECT_DIR$/Test/.pytest_cache/v/cache/nodeids" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/pets_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/pets_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/test_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/test_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/user_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/user_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pets/pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/pets/pet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store_requests/store.py" beforeDir="false" afterPath="$PROJECT_DIR$/store_requests/store.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_requests/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_requests/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_requests/user_manager.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,32 +34,34 @@
         <counts>
           <entry key="[ml" value="1" />
           <entry key="json" value="1" />
-          <entry key="py" value="72" />
-          <entry key="rst" value="2" />
+          <entry key="py" value="90" />
+          <entry key="rst" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="72" />
-          <entry key="ReST" value="2" />
+          <entry key="Python" value="90" />
+          <entry key="ReST" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="12" />
           <entry key="[ml" value="1" />
-          <entry key="dummy" value="26" />
-          <entry key="py" value="5463" />
+          <entry key="dummy" value="30" />
+          <entry key="py" value="6071" />
+          <entry key="rst" value="16" />
           <entry key="txt" value="1" />
           <entry key="xml" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="28" />
-          <entry key="Python" value="5475" />
+          <entry key="PLAIN_TEXT" value="32" />
+          <entry key="Python" value="6083" />
+          <entry key="ReST" value="16" />
           <entry key="XML" value="20" />
         </counts>
       </usages-collector>
@@ -63,44 +70,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/test_data.py">
+        <entry file="file://$PROJECT_DIR$/pets/pet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/pets_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="230">
+              <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
               <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Test/store_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-                <marker date="1536839904428" expanded="true" signature="1364:1368" ph="..." />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user_requests/user_manager.py">
+        <entry file="file://$PROJECT_DIR$/store_requests/store_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+            <state relative-caret-position="153">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -108,10 +93,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test/user_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="17">
+              <caret line="1" column="51" lean-forward="true" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user_requests/user.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user_requests/usermanager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+                <marker date="1536848504407" expanded="true" signature="149:150" ph="..." />
+                <marker date="1536848504407" expanded="true" signature="150:155" ph="..." />
+                <marker date="1536848504407" expanded="true" signature="1290:1539" ph="..." />
               </folding>
             </state>
           </provider>
@@ -157,16 +169,17 @@
         <option value="$PROJECT_DIR$/pets/pet_info.py" />
         <option value="$PROJECT_DIR$/user_requests/user_info.py" />
         <option value="$PROJECT_DIR$/user_requests/user_property.py" />
-        <option value="$PROJECT_DIR$/user_requests/usermanager.py" />
-        <option value="$PROJECT_DIR$/pets/pet.py" />
         <option value="$PROJECT_DIR$/store_requests/store_manager.py" />
         <option value="$PROJECT_DIR$/Test/store_test.py" />
+        <option value="$PROJECT_DIR$/Test/test_data.py" />
+        <option value="$PROJECT_DIR$/Test/pets_test.py" />
+        <option value="$PROJECT_DIR$/pets/pet.py" />
+        <option value="$PROJECT_DIR$/store_requests/store.py" />
+        <option value="$PROJECT_DIR$/docs/pets.rst" />
         <option value="$PROJECT_DIR$/user_requests/user_manager.py" />
         <option value="$PROJECT_DIR$/Test/user_test.py" />
-        <option value="$PROJECT_DIR$/Test/test_data.py" />
         <option value="$PROJECT_DIR$/user_requests/user.py" />
-        <option value="$PROJECT_DIR$/store_requests/store.py" />
-        <option value="$PROJECT_DIR$/Test/pets_test.py" />
+        <option value="$PROJECT_DIR$/user_requests/usermanager.py" />
       </list>
     </option>
   </component>
@@ -193,7 +206,22 @@
             <path>
               <item name="PetsStore" type="b2602c69:ProjectViewProjectNode" />
               <item name="PetsStore" type="462c0819:PsiDirectoryNode" />
+              <item name="pets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetsStore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetsStore" type="462c0819:PsiDirectoryNode" />
+              <item name="store_requests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetsStore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetsStore" type="462c0819:PsiDirectoryNode" />
               <item name="Test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetsStore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PetsStore" type="462c0819:PsiDirectoryNode" />
+              <item name="user_requests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -208,6 +236,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PetsStore\docs" />
       <recent name="D:\PetsStore\BLL" />
     </key>
   </component>
@@ -223,7 +252,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in pets_test.py">
+  <component name="RunManager" selected="Python tests.pytest for user_test.test_create_user">
     <configuration name="pytest for pets_test.test_create_pet" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PetsStore" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -239,7 +268,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for pets_test.test_update_pet" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for pets_test.test_get_pet_by_id" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PetsStore" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -250,11 +279,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;pets_test.test_update_pet&quot;" />
+      <option name="_new_target" value="&quot;pets_test.test_get_pet_by_id&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in pets_test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for user_test.test_create_user" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PetsStore" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -265,8 +294,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Test/pets_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;user_test.test_create_user&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for user_test.test_delete_user_username" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PetsStore" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;user_test.test_delete_user_username&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest in store_test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -284,35 +328,20 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in user_test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="PetsStore" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Test/user_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python tests.pytest in user_test.py" />
-      <item itemvalue="Python tests.pytest for pets_test.test_update_pet" />
-      <item itemvalue="Python tests.pytest in pets_test.py" />
-      <item itemvalue="Python tests.pytest in store_test.py" />
       <item itemvalue="Python tests.pytest for pets_test.test_create_pet" />
+      <item itemvalue="Python tests.pytest for pets_test.test_get_pet_by_id" />
+      <item itemvalue="Python tests.pytest in store_test.py" />
+      <item itemvalue="Python tests.pytest for user_test.test_create_user" />
+      <item itemvalue="Python tests.pytest for user_test.test_delete_user_username" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in pets_test.py" />
-        <item itemvalue="Python tests.pytest in user_test.py" />
+        <item itemvalue="Python tests.pytest for user_test.test_delete_user_username" />
+        <item itemvalue="Python tests.pytest for user_test.test_create_user" />
         <item itemvalue="Python tests.pytest in store_test.py" />
+        <item itemvalue="Python tests.pytest for pets_test.test_get_pet_by_id" />
         <item itemvalue="Python tests.pytest for pets_test.test_create_pet" />
-        <item itemvalue="Python tests.pytest for pets_test.test_update_pet" />
       </list>
     </recent_temporary>
   </component>
@@ -439,39 +468,46 @@
       <option name="project" value="LOCAL" />
       <updated>1536840065348</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Revert &quot;1&quot;&#10;&#10;This reverts commit 5b762b26f54017e8e9c47e23a4842f4c46f9a12d.&#10;&#10;# Conflicts:&#10;#&#9;Test/pets_test.py&#10;#&#9;pets/pet_info.py">
+      <created>1536840899870</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1536840899870</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_user_test_py - 2018.09.13 at 14h 53m 16s.xml">
-      <configuration name="pytest in user_test.py" configurationId="tests" />
+    <history-entry file="pytest_for_pets_test_test_create_pet - 2018.09.13 at 16h 35m 38s.xml">
+      <configuration name="pytest for pets_test.test_create_pet" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_pets_test_py - 2018.09.13 at 14h 54m 54s.xml">
-      <configuration name="pytest in pets_test.py" configurationId="tests" />
+    <history-entry file="pytest_for_pets_test_test_get_pet_by_id - 2018.09.13 at 16h 36m 48s.xml">
+      <configuration name="pytest for pets_test.test_get_pet_by_id" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_store_test_py - 2018.09.13 at 14h 58m 31s.xml">
+    <history-entry file="pytest_for_pets_test_test_create_pet - 2018.09.13 at 16h 42m 40s.xml">
+      <configuration name="pytest for pets_test.test_create_pet" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_pets_test_test_create_pet - 2018.09.13 at 16h 43m 26s.xml">
+      <configuration name="pytest for pets_test.test_create_pet" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_pets_test_test_create_pet - 2018.09.13 at 16h 44m 04s.xml">
+      <configuration name="pytest for pets_test.test_create_pet" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_pets_test_test_create_pet - 2018.09.13 at 16h 46m 01s.xml">
+      <configuration name="pytest for pets_test.test_create_pet" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_pets_test_test_create_pet - 2018.09.13 at 16h 51m 16s.xml">
+      <configuration name="pytest for pets_test.test_create_pet" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_pets_test_test_create_pet - 2018.09.13 at 16h 53m 24s.xml">
+      <configuration name="pytest for pets_test.test_create_pet" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_store_test_py - 2018.09.13 at 16h 54m 15s.xml">
       <configuration name="pytest in store_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_user_test_py - 2018.09.13 at 15h 00m 17s.xml">
-      <configuration name="pytest in user_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_user_test_py - 2018.09.13 at 15h 04m 19s.xml">
-      <configuration name="pytest in user_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_store_test_py - 2018.09.13 at 15h 10m 23s.xml">
-      <configuration name="pytest in store_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_pets_test_py - 2018.09.13 at 15h 11m 20s.xml">
-      <configuration name="pytest in pets_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_store_test_py - 2018.09.13 at 15h 11m 31s.xml">
-      <configuration name="pytest in store_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_user_test_py - 2018.09.13 at 15h 11m 42s.xml">
-      <configuration name="pytest in user_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_pets_test_py - 2018.09.13 at 15h 14m 20s.xml">
-      <configuration name="pytest in pets_test.py" configurationId="tests" />
+    <history-entry file="pytest_for_user_test_test_create_user - 2018.09.13 at 17h 15m 03s.xml">
+      <configuration name="pytest for user_test.test_create_user" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -479,8 +515,8 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.48220065" visible="true" weight="0.24973656" />
-      <window_info id="Structure" order="2" sideWeight="0.5177994" side_tool="true" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.74757284" visible="true" weight="0.24973656" />
+      <window_info id="Structure" order="2" sideWeight="0.2524272" side_tool="true" visible="true" weight="0.24973656" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50052685" side_tool="true" weight="0.329718" />
@@ -488,7 +524,7 @@
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49947312" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -531,6 +567,22 @@
     <MESSAGE value="1" />
     <MESSAGE value="Revert &quot;1&quot;&#10;&#10;This reverts commit 5b762b26f54017e8e9c47e23a4842f4c46f9a12d.&#10;&#10;# Conflicts:&#10;#&#9;Test/pets_test.py&#10;#&#9;pets/pet_info.py" />
     <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;1&quot;&#10;&#10;This reverts commit 5b762b26f54017e8e9c47e23a4842f4c46f9a12d.&#10;&#10;# Conflicts:&#10;#&#9;Test/pets_test.py&#10;#&#9;pets/pet_info.py" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pets/pet.py</url>
+          <line>73</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pets/pet.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -667,17 +719,63 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user_requests/user_property.py" />
+    <entry file="file://C:/Python/Lib/site-packages/requests/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="597" column="13" selection-start-line="597" selection-start-column="13" selection-end-line="597" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/store_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+            <marker date="1536840895053" expanded="true" signature="1287:1291" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store_requests/store.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/pets.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/test_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="8" selection-start-line="2" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/pets_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pets/pet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="230">
+          <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1536834715618" expanded="true" signature="659:664" ph="..." />
-            <marker date="1536834715618" expanded="true" signature="831:836" ph="..." />
-            <marker date="1536834715618" expanded="true" signature="1038:1043" ph="..." />
-            <marker date="1536834715618" expanded="true" signature="1236:1241" ph="..." />
-            <marker date="1536834715618" expanded="true" signature="1922:2000" ph="..." />
           </folding>
         </state>
       </provider>
@@ -689,69 +787,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/store_requests/store.py">
+    <entry file="file://$PROJECT_DIR$/Test/user_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="17">
+          <caret line="1" column="51" lean-forward="true" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user_requests/user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="37" column="31" lean-forward="true" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        <state relative-caret-position="357">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1536840430261" expanded="true" signature="106:107" ph="..." />
-            <marker date="1536840430261" expanded="true" signature="107:112" ph="..." />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user_requests/user_manager.py">
+    <entry file="file://$PROJECT_DIR$/user_requests/usermanager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/user_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/test_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/pets_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/store_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-            <marker date="1536839904428" expanded="true" signature="1364:1368" ph="..." />
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1536848504407" expanded="true" signature="149:150" ph="..." />
+            <marker date="1536848504407" expanded="true" signature="150:155" ph="..." />
+            <marker date="1536848504407" expanded="true" signature="1290:1539" ph="..." />
           </folding>
         </state>
       </provider>
