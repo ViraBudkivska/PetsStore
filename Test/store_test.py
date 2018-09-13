@@ -1,5 +1,5 @@
 from Test.test_data import SUCCESS
-from store_requests.store import Store_Object
+from store_requests.store_manager import Store_Object
 
 # store_manager = Store()
 # url_for_test = 'https://petstore.swagger.io/v2'

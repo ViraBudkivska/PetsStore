@@ -1,5 +1,5 @@
 from Test.test_data import SUCCESS
-from user_requests.usermanager import User_Object
+from user_requests.user_manager import User_Object
 
 
 # user_manager = User()
