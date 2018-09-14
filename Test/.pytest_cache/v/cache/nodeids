@@ -1,7 +1,3 @@
 [
-  "store_test.py::test_create_store",
-  "store_test.py::test_get_store_by_id",
-  "store_test.py::test_get_invalid_store_by_id",
-  "store_test.py::test_get_find_inventory_store",
-  "store_test.py::test_delete_store"
+  "user_test.py::test_create_user"
 ]

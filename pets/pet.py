@@ -26,19 +26,20 @@ class Pets:
     # "status": "available"
     # }
 
-    # payload: dict = {}
-    #
-    def __init__(self, url_site):
-        self.url = url_site
+    payload: dict = {}
 
-    def create_pet(self, Pet_Object):
-        payload = dict(**Pet_Object)
-        response = requests.post(self.url + '/pet', json=payload)
+    def __init__(self, **kwargs):
+        self.url = url_site
+        self.payload = dict(**kwargs)
+
+    def create_pet(self, ):
+        # payload = dict()
+        response = requests.post(self.url + '/pet', json=self.payload)
         data = json.loads(response.text)
         return data, response
 
     def get_pet_by_id(self):
-        response = requests.get(self.url + '/pet/' + str(self.pet['id']), json=payload)
+        response = requests.get(self.url + '/pet/' + str(self.payload['id']), json=self.payload)
         data = json.loads(response.text)
         return data, response
 
@@ -51,7 +52,7 @@ class Pets:
         pet['name'] = "Dog"
         pet['id'] = new_id
         pet['status'] = "pending"
-        response = requests.put(self.url + '/pet', json=payload)
+        response = requests.put(self.url + '/pet', json=self.payload)
         data = json.loads(response.text)
         return data, response
 
