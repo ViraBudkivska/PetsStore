@@ -15,9 +15,8 @@ class UserManager:
         self.url = url
 
     def create_user(self, data_user):
-        response = requests.post(self.url + '/user', json=data_user)
-        data = json.loads(response.text)
-        return data, response
+        return requests.post(self.url + '/user', json=json.loads(data_user))
+
 
 
     # def get_user_username(self, user: User):
