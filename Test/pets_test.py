@@ -1,47 +1,48 @@
-from Test.test_data import NotFound, SUCCESS
-from pets.pet import Pets, Pet_Object
+from Test.test_data import SUCCESS, NotFound
+import json
+from Test.test_data import url_site
+from pets.pet_manager import PetManager
+from pets.pet import data_json, pet
 
-
-# pet_manager = Pets()
+manager = PetManager(url_site)
 
 
 def test_create_pet():
-    response_from_function = Pet_Object.create_pet()
-    assert response_from_function[1].status_code == SUCCESS
-    # assert response_from_function[0]['id'] == Pet_Object.payload['id']
-    assert response_from_function[0]['category'] == Pet_Object.payload['category']
-    # assert response_from_function[0]['photoUrls'] == Pet_Object.payload['photoUrls']
-    assert response_from_function[0]['tags'] == Pet_Object.payload['tags']
+    response_from_function = manager.create_pet(data_json)
+    assert response_from_function.status_code == SUCCESS
+    assert json.loads(response_from_function.request.body.decode()).get('id'), pet.id
+    assert json.loads(response_from_function.request.body.decode()).get('category'), pet.category
+    assert json.loads(response_from_function.request.body.decode()).get('photoUrls'), pet.photoUrls
+    assert json.loads(response_from_function.request.body.decode()).get('tags'), pet.tags
 
 
 def test_get_pet_by_id():
-    response_from_function = Pet_Object.get_pet_by_id()
-    assert response_from_function[1].status_code == SUCCESS
-    assert response_from_function[0]['id'] == Pet_Object.payload['id']
+    response_from_function = manager.get_pet_by_id(data_json)
+    assert response_from_function.status_code == SUCCESS
+    assert json.loads(response_from_function.request.body.decode()).get('id'), pet.id
 
 
 def test_get_find_by_status_pet():
-    response_from_function = Pet_Object.get_find_by_status_pet()
-    assert response_from_function[1].status_code == SUCCESS
+    response_from_function = manager.get_find_by_status_pet(data_json)
+    assert response_from_function.status_code == SUCCESS
 
 
 def test_update_pet():
-    response_from_function = Pet_Object.update_pet()
-    # assert response_from_function[1].status_code == SUCCESS
-    assert response_from_function[0]['name'] == Pet_Object.payload['name']
-    assert response_from_function[0]['id'] == Pet_Object.payload['id']
-    assert response_from_function[0]['status'] == Pet_Object.payload['status']
-    assert response_from_function[0]['category'] == Pet_Object.payload['category']
+    response_from_function = manager.update_pet(data_json)
+    assert response_from_function.status_code == SUCCESS
+    assert json.loads(response_from_function.request.body.decode()).get('name'), pet.name
+    assert json.loads(response_from_function.request.body.decode()).get('id'), pet.id
+    assert json.loads(response_from_function.request.body.decode()).get('status'), pet.status
+    assert json.loads(response_from_function.request.body.decode()).get('category'), pet.category
 
 
 def test_delete_pet():
-    response_from_function = Pet_Object.delete_pet_by_id()
+    response_from_function = manager.delete_pet_by_id(data_json)
     assert response_from_function.status_code == SUCCESS
-    # assert response_from_function[0]['id'], response_from_function[1]['id']
 
 
 def test_invalid_pet_by_id():
-    response_from_function = Pet_Object.get_invalid_pet_by_id()
-    assert response_from_function[1].status_code == NotFound
+    response_from_function = manager.get_invalid_pet_by_id(data_json)
+    assert response_from_function.status_code == NotFound
 
 

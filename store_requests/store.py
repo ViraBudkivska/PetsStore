@@ -12,5 +12,5 @@ class Store:
         self.complete = complete
 
 
-store = Store(id=1, petId=1, quantity=2, shipDate="2018-09-12T13:52:49.901Z", status="placed", complete=True)
+store = Store(id=12, petId=12, quantity=2, shipDate="2018-09-12T13:52:49.901Z", status="placed", complete=True)
 data_json = json.dumps(store.__dict__)

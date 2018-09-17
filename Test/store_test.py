@@ -1,4 +1,4 @@
-from Test.test_data import SUCCESS
+from Test.test_data import SUCCESS, store_inventory
 import json
 from Test.test_data import url_site
 from store_requests.store_manager import StoreManager
@@ -18,24 +18,25 @@ def test_create_store():
 
 
 def test_get_store_by_id():
-    response_from_function = Store_Object.get_store_by_id()
-    assert response_from_function[1].status_code == SUCCESS
-    assert response_from_function[0]['id'] == Store_Object.payload['id']
+    response_from_function = manager.get_store_by_id(data_json)
+    assert response_from_function.status_code == SUCCESS
+    # assert json.loads(response_from_function.request.body.decode()).get('id'), store.id
 
 
 def test_get_invalid_store_by_id():
-    response_from_function = Store_Object.get_invalid_store_by_id()
-    assert response_from_function[1].status_code == SUCCESS
-    assert response_from_function[0]['id'] == Store_Object.payload['id']
+    response_from_function = manager.get_invalid_store_by_id(data_json)
+    assert response_from_function.status_code == SUCCESS
+    assert json.loads(response_from_function.request.body.decode()).get('id'), store.id
 
 
 def test_get_find_inventory_store():
-    response_from_function = Store_Object.get_store_inventory()
-    assert response_from_function[1].status_code == SUCCESS
+    response_from_function = manager.get_store_inventory(data_json)
+    assert response_from_function.status_code == SUCCESS
+    assert json.loads(response_from_function.request.body.decode()), json.loads(store_inventory.__dict__)
 
 
 def test_delete_store():
-    response_from_function = Store_Object.delete_store_by_id()
+    response_from_function = manager.delete_store_by_id(data_json)
     assert response_from_function.status_code == SUCCESS
 
 
