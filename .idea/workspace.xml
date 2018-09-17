@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="02b4cf13-4aaa-478f-b03c-22f54287c4dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml___jb_tmp___" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/.pytest_cache/v/cache/lastfailed" beforeDir="false" afterPath="$PROJECT_DIR$/Test/.pytest_cache/v/cache/lastfailed" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/.pytest_cache/v/cache/nodeids" beforeDir="false" afterPath="$PROJECT_DIR$/Test/.pytest_cache/v/cache/nodeids" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/user_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/user_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pets/pet.py" beforeDir="false" afterPath="$PROJECT_DIR$/pets/pet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_requests/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_requests/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_requests/user.py___jb_tmp___" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_requests/usermanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_requests/usermanager.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,11 +60,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test/user_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="54" />
+            <state relative-caret-position="119">
+              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
               <folding>
                 <element signature="e#96#145#0" expanded="true" />
               </folding>
@@ -89,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Test/store_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="67" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
+            <state relative-caret-position="408">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
                 <marker date="1536840895053" expanded="true" signature="1287:1291" ph="..." />
@@ -526,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536840899870</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Revert &quot;1&quot;&#10;&#10;This reverts commit 5b762b26f54017e8e9c47e23a4842f4c46f9a12d.&#10;&#10;# Conflicts:&#10;#&#9;Test/pets_test.py&#10;#&#9;pets/pet_info.py">
+      <created>1536939948338</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1536939948338</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -562,20 +561,19 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.7462185" visible="true" weight="0.24973656" />
-      <window_info id="Structure" order="2" sideWeight="0.25378153" side_tool="true" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.74626863" visible="true" weight="0.24973656" />
+      <window_info id="Structure" order="2" sideWeight="0.25373134" side_tool="true" visible="true" weight="0.24973656" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50052685" side_tool="true" weight="0.329718" />
       <window_info anchor="bottom" id="Python Console" order="3" weight="0.329718" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.329718" />
-      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49947312" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.3381535" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="6" sideWeight="0.49947312" visible="true" weight="0.32925472" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.3381535" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.39822024" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -731,6 +729,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9274">
           <caret line="986" column="23" selection-start-line="986" selection-start-column="23" selection-end-line="986" selection-end-column="23" />
+          <folding>
+            <element signature="e#86161#86167#0" expanded="true" />
+            <element signature="e#86169#86175#0" expanded="true" />
+            <element signature="e#86375#86381#0" expanded="true" />
+            <element signature="e#86383#86389#0" expanded="true" />
+            <element signature="e#86590#86596#0" expanded="true" />
+            <element signature="e#86598#86604#0" expanded="true" />
+            <element signature="e#86808#86814#0" expanded="true" />
+            <element signature="e#86816#86822#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -811,17 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/store_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="67" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-            <marker date="1536840895053" expanded="true" signature="1287:1291" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/store_requests/store_manager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -847,6 +844,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Test/user_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="e#96#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Test/test_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -854,12 +861,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/user_test.py">
+    <entry file="file://$PROJECT_DIR$/Test/store_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="54" />
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
-            <element signature="e#96#145#0" expanded="true" />
+            <element signature="e#0#34#0" expanded="true" />
+            <marker date="1536840895053" expanded="true" signature="1287:1291" ph="..." />
           </folding>
         </state>
       </provider>
