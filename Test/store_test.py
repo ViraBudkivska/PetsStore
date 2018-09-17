@@ -1,15 +1,20 @@
 from Test.test_data import SUCCESS
-from store_requests.store_manager import Store_Object
+import json
+from Test.test_data import url_site
+from store_requests.store_manager import StoreManager
+from store_requests.store import data_json, store
+
+manager = StoreManager(url_site)
 
 
 def test_create_store():
-    response_from_function = Store_Object.create_store()
-    assert response_from_function[1].status_code == SUCCESS
-    assert response_from_function[0]['id'] == Store_Object.payload['id']
-    assert response_from_function[0]['petId'] == Store_Object.payload['petId']
-    assert response_from_function[0]['quantity'] == Store_Object.payload['quantity']
-    assert response_from_function[0]['status'] == Store_Object.payload['status']
-    assert response_from_function[0]['complete'] == Store_Object.payload['complete']
+    response_from_function = manager.create_store(data_json)
+    assert response_from_function.status_code == SUCCESS
+    assert json.loads(response_from_function.request.body.decode()).get('id'), store.id
+    assert json.loads(response_from_function.request.body.decode()).get('petId'), store.petId
+    assert json.loads(response_from_function.request.body.decode()).get('quantity'), store.quantity
+    assert json.loads(response_from_function.request.body.decode()).get('status'), store.status
+    assert json.loads(response_from_function.request.body.decode()).get('complete'), store.complete
 
 
 def test_get_store_by_id():
