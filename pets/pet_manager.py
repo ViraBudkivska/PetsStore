@@ -8,9 +8,16 @@ from pets.pet import pet
 class PetManager:
 
     def __init__(self, url):
+        """
+        :param url: -- url site which testing
+        """
         self.url = url
 
     def create_pet(self, data_json):
+        """
+        :param data_json:  -- param which have a pet object converted in dictionary type
+        :return: response:  -- the return code
+        """
         response = requests.post(self.url + '/pet', json=json.loads(data_json))
         return response
 
