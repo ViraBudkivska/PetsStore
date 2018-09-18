@@ -1,3 +1,11 @@
+"""
+store_manager :
+"""
+# pylint: disable=too-many-arguments
+# pylint: disable=too-few-public-methods
+# pylint: disable=no-member
+# pylint: disable=no-name-in-module
+# pylint: disable=import-error
 import json
 import requests
 
@@ -6,6 +14,9 @@ from store_requests.store import store
 
 
 class StoreManager:
+    """
+    Store Manager describe main methods with store
+    """
 
     def __init__(self, url):
         self.url = url
@@ -32,7 +43,8 @@ class StoreManager:
 
         :return:    response -- the return code
         """
-        response = requests.get(self.url + '/store/order/' + str(json.loads(data_json)['id']), json=json.loads(data_json))
+        response = requests.get(self.url + '/store/order/' + str(json.loads(data_json)['id']),
+                                json=json.loads(data_json))
         return response
 
     def get_invalid_store_by_id(self, data_json):
@@ -41,7 +53,8 @@ class StoreManager:
         :return:    response -- the return code
         """
         store.id = new_id
-        response = requests.get(self.url + '/store/order/' + str(json.loads(data_json)['id']), json=json.loads(data_json))
+        response = requests.get(self.url + '/store/order/' + str(json.loads(data_json)['id']),
+                                json=json.loads(data_json))
         return response
 
     def delete_store_by_id(self, data_json):
@@ -51,9 +64,3 @@ class StoreManager:
         """
         response = requests.delete(self.url + '/store/order/' + str(json.loads(data_json)['id']))
         return response
-
-
-
-
-
-

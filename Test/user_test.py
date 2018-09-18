@@ -1,3 +1,4 @@
+# pylint: disable=too-many-arguments
 from Test.test_data import SUCCESS
 import json
 from Test.test_data import url_site
