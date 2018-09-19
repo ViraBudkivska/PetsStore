@@ -10,7 +10,7 @@ import json
 import requests
 
 import Test.test_data
-from pets.pet import PetObject
+from Test.test_data import PetObject
 
 
 class PetManager:
@@ -34,7 +34,6 @@ class PetManager:
 
     def get_pet_by_id(self, data_json):
         """
-
         :param data_json:
         :return:
         """
@@ -44,8 +43,7 @@ class PetManager:
 
     def get_find_by_status_pet(self, data_json):
         """
-
-        :param DataJson:
+        :param data_json:
         :return:
         """
         response = requests.get(self.url + '/pet/findByStatus?status='
@@ -55,8 +53,7 @@ class PetManager:
 
     def update_pet(self, data_json):
         """
-
-        :param DataJson:
+        :param data_json:
         :return:
         """
         PetObject.name = "Dog"
@@ -67,8 +64,7 @@ class PetManager:
 
     def delete_pet_by_id(self, data_json):
         """
-
-        :param DataJson:
+        :param data_json:
         :return:
         """
         response = requests.delete(self.url + '/pet/' + str(json.loads(data_json)['id']))
@@ -76,8 +72,7 @@ class PetManager:
 
     def get_invalid_pet_by_id(self, data_json):
         """
-
-        :param DataJson:
+        :param data_json:
         :return:
         """
         PetObject.id = Test.test_data.invalid_new_id

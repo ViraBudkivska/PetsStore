@@ -6,10 +6,10 @@ module usermanager : have a class with methods
 # pylint: disable=no-member
 # pylint: disable=no-name-in-module
 # pylint: disable=import-error
+
 import json
 import requests
-from Test.test_data import new_username
-from user_requests.user import user
+from Test.test_data import new_username, user
 
 
 class UserManager:

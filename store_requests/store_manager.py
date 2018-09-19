@@ -9,8 +9,7 @@ store_manager :
 import json
 import requests
 
-from Test.test_data import new_id
-from store_requests.store import store
+from Test.test_data import new_id, store
 
 
 class StoreManager:

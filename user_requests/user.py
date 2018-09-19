@@ -10,8 +10,6 @@ module user have a class User and object user
 # pylint: disable=invalid-name
 # pylint: disable=redefined-builtin
 
-import json
-
 
 class User:
     """
@@ -27,14 +25,3 @@ class User:
         self.password = password
         self.phone = phone
         self.userStatus = user_status
-
-
-user = User(id=3,
-            username="Nini",
-            first_name="Vira",
-            last_name="Budda",
-            email="email@gmail.com",
-            password="1234567",
-            phone="55455545",
-            user_status=1)
-data_json = json.dumps(user.__dict__)
