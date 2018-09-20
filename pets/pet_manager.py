@@ -26,6 +26,7 @@ class PetManager:
 
     def create_pet(self, data_json):
         """
+        methods for creating a pet
         :param data_json:  -- param which have a pet object converted in dictionary type
         :return: response:  -- the return code
         """
@@ -34,6 +35,7 @@ class PetManager:
 
     def get_pet_by_id(self, data_json):
         """
+        method for checking the existence of a pet by id
         :param data_json:
         :return:
         """
@@ -43,6 +45,7 @@ class PetManager:
 
     def get_find_by_status_pet(self, data_json):
         """
+        method for checking the status of a pet
         :param data_json:
         :return:
         """
@@ -53,6 +56,7 @@ class PetManager:
 
     def update_pet(self, data_json):
         """
+         method for updating fields of a pet
         :param data_json:
         :return:
         """
@@ -64,6 +68,7 @@ class PetManager:
 
     def delete_pet_by_id(self, data_json):
         """
+        method for deleting pet by id
         :param data_json:
         :return:
         """
@@ -72,6 +77,7 @@ class PetManager:
 
     def get_invalid_pet_by_id(self, data_json):
         """
+        methods for checking invalid data for pet
         :param data_json:
         :return:
         """
